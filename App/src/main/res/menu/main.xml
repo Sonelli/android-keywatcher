@@ -7,12 +7,12 @@
         android:title="@string/clear"
         android:orderInCategory="100"
         app:showAsAction="always"
-        android:icon="@drawable/abc_ic_clear"/>
+        android:icon="@drawable/ic_discard"/>
 
     <item android:id="@+id/action_share"
         android:title="@string/share"
         android:orderInCategory="100"
         app:showAsAction="always"
-        android:icon="@drawable/abc_ic_menu_share_holo_dark"/>
+        android:icon="@drawable/ic_share"/>
 
 </menu>

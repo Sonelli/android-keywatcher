@@ -1,4 +1,5 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
@@ -7,7 +8,7 @@
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="50dp"
+        android:layout_marginBottom="50dp"
         android:scrollbarAlwaysDrawVerticalTrack="true">
 
         <TextView
@@ -21,14 +22,13 @@
 
     </ScrollView>
 
-
     <TextView
+        android:layout_marginTop="-50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:padding="16dp"
-        android:layout_alignParentBottom="true"
         android:gravity="center"
         android:textColor="@color/foreground"
         android:text="@string/press_a_hardware_key"/>
 
-</RelativeLayout>
+</LinearLayout>

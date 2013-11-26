@@ -13,6 +13,7 @@ repositories {
 }
 
 android {
+
     compileSdkVersion 18
     buildToolsVersion "18.1.1"
 
@@ -20,8 +21,19 @@ android {
         minSdkVersion 10
         targetSdkVersion 19
     }
+
+    signingConfigs {
+        release {
+            // storeFile file("some.keystore")
+            // storePassword "store_password"
+            // keyAlias "key_alias"
+            // keyPassword "key_password"
+        }
+    }
+
     buildTypes {
         release {
+            //signingConfig = signingConfigs.release
             runProguard true
             proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
         }

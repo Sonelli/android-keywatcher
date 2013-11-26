@@ -50,7 +50,14 @@ public class MainActivity extends ActionBarActivity {
                sb.append("Keyboard Type: ").append(event.getDevice().getKeyboardType()).append("\n");
                sb.append("Device ID: ").append(event.getDeviceId()).append("\n");
                logView.setText(sb.toString());
-               scrollView.fullScroll(View.FOCUS_DOWN);
+
+               scrollView.post(new Runnable() {
+                   @Override
+                   public void run() {
+                       scrollView.fullScroll(View.FOCUS_DOWN);
+                   }
+               });
+
                return true;
 
            }
