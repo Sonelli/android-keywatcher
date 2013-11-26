@@ -5,7 +5,7 @@ A simple KeyEvent logger for hardware keyboard events in Android.
 
 Has options to share log/results via email etc.
 
-[Download the APK here...](KeyWatcher-1.0.apk)
+[Prebuilt APK Download](https://raw.github.com/Sonelli/android-keywatcher/master/KeyWatcher-1.0.apk)
 
 ![screenshot](screenshot.png)
 
